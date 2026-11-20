@@ -1,0 +1,13 @@
+{
+  "name": "sohanuls-doomsday-ready",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "sql.js": "^1.11.0"
+  }
+}

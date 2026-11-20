@@ -6,25 +6,42 @@ const initSqlJs = require('sql.js');
 const fs = require('fs');
 const path = require('path');
 
-const dataDir = path.join(__dirname, '..', 'data');
+const os = require('os');
+const isVercel = Boolean(process.env.VERCEL);
+const dataDir = isVercel ? os.tmpdir() : path.join(__dirname, '..', 'data');
 const DB_PATH = path.join(dataDir, 'doomsday.db');
 
 let sqlDb = null;
 
 function save() {
-  const data = sqlDb.export();
-  fs.writeFileSync(DB_PATH, Buffer.from(data));
+  try {
+    if (sqlDb) {
+      const data = sqlDb.export();
+      fs.writeFileSync(DB_PATH, Buffer.from(data));
+    }
+  } catch (err) {
+    // In serverless environments, in-memory DB persists across warm invokes
+  }
 }
 
 const db = {
   async init() {
-    const SQL = await initSqlJs();
+    const wasmPath = path.dirname(require.resolve('sql.js'));
+    const SQL = await initSqlJs({
+      locateFile: file => path.join(wasmPath, file)
+    });
     if (!fs.existsSync(dataDir)) {
-      fs.mkdirSync(dataDir, { recursive: true });
+      try {
+        fs.mkdirSync(dataDir, { recursive: true });
+      } catch (err) {}
     }
     if (fs.existsSync(DB_PATH)) {
-      const buf = fs.readFileSync(DB_PATH);
-      sqlDb = new SQL.Database(buf);
+      try {
+        const buf = fs.readFileSync(DB_PATH);
+        sqlDb = new SQL.Database(buf);
+      } catch (err) {
+        sqlDb = new SQL.Database();
+      }
     } else {
       sqlDb = new SQL.Database();
     }

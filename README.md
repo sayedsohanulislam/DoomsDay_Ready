@@ -2,6 +2,9 @@
 
 **Doomsday Ready** is a full-stack MCU companion application built for the **Blinto Talent Accelerator 2027 Assessment**. It helps Marvel Cinematic Universe fans prepare for the premiere of *Avengers: Doomsday* by calculating optimal rewatch schedules through directed acyclic graph (DAG) topological sorting and planning watch-party ticket reservations using exact-change dynamic programming.
 
+> 🚀 **Live Production Deployment**: [https://sohanuls-doomsday-ready.vercel.app](https://sohanuls-doomsday-ready.vercel.app)  
+> 📦 **GitHub Repository**: [https://github.com/sayedsohanulislam/DoomsDay_Ready](https://github.com/sayedsohanulislam/DoomsDay_Ready)
+
 ---
 
 ## Table of Contents
