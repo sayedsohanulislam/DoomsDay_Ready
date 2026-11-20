@@ -2,13 +2,23 @@
 
 **Doomsday Ready** is a full-stack MCU companion application built for the **Blinto Talent Accelerator 2027 Assessment**. It helps Marvel Cinematic Universe fans prepare for the premiere of *Avengers: Doomsday* by calculating optimal rewatch schedules through directed acyclic graph (DAG) topological sorting and planning watch-party ticket reservations using exact-change dynamic programming.
 
-> 🚀 **Live Production Deployment**: [https://sohanuls-doomsday-ready.vercel.app](https://sohanuls-doomsday-ready.vercel.app)  
-> 📦 **GitHub Repository**: [https://github.com/sayedsohanulislam/DoomsDay_Ready](https://github.com/sayedsohanulislam/DoomsDay_Ready)
+---
+
+## 🌐 Live Application & Submission Links
+
+| Resource | URL | Status |
+|---|---|:---:|
+| 🚀 **Live Production Application** | **[https://sohanuls-doomsday-ready.vercel.app](https://sohanuls-doomsday-ready.vercel.app)** | **ACTIVE (Vercel)** |
+| 📦 **GitHub Source Repository** | **[https://github.com/sayedsohanulislam/DoomsDay_Ready](https://github.com/sayedsohanulislam/DoomsDay_Ready)** | **PUBLIC (`main`)** |
+| ⚡ **Live Production API** | **[https://sohanuls-doomsday-ready.vercel.app/api](https://sohanuls-doomsday-ready.vercel.app/api)** | **ACTIVE (Serverless)** |
+| 🎬 **Live API Movies Endpoint** | **[https://sohanuls-doomsday-ready.vercel.app/api/movies](https://sohanuls-doomsday-ready.vercel.app/api/movies)** | **200 OK** |
+| 🎟️ **Live API Cinemas Endpoint** | **[https://sohanuls-doomsday-ready.vercel.app/api/cinemas](https://sohanuls-doomsday-ready.vercel.app/api/cinemas)** | **200 OK** |
 
 ---
 
 ## Table of Contents
 
+- [Live Application & Submission Links](#-live-application--submission-links)
 - [Features & Capabilities](#features--capabilities)
 - [Architecture & Tech Stack](#architecture--tech-stack)
 - [Data Model Diagram (Bonus Deliverable)](#data-model-diagram-bonus-deliverable)
@@ -19,12 +29,14 @@
   - [3. Watch-Party Seat Booking (Coin-Change DP)](#3-watch-party-seat-booking-coin-change-dp)
 - [API Reference](#api-reference)
 - [Getting Started](#getting-started)
-  - [Option A: Running with Docker Compose (Recommended Bonus)](#option-a-running-with-docker-compose-recommended-bonus)
-  - [Option B: Running Locally (Node.js)](#option-b-running-locally-nodejs)
+  - [Option A: Instant Live Web App (No Setup Required)](#option-a-instant-live-web-app-no-setup-required)
+  - [Option B: Running with Docker Compose (Recommended Bonus)](#option-b-running-with-docker-compose-recommended-bonus)
+  - [Option C: Running Locally (Node.js)](#option-c-running-locally-nodejs)
 - [Test Verification Suite (15/15 Passed)](#test-verification-suite-1515-passed)
 - [Project Structure](#project-structure)
 - [UI & UX Highlights](#ui--ux-highlights)
 - [AI Tools Usage Disclosure](#ai-tools-usage-disclosure)
+- [Submission & Repository Access](#submission--repository-access)
 
 ---
 
@@ -257,7 +269,17 @@ All official requirements and sample data from the assessment specification were
 
 ## Getting Started
 
-### Option A: Running with Docker Compose (Recommended Bonus)
+### Option A: Instant Live Web App (No Setup Required)
+
+Experience the live, production-grade deployment directly in your browser without needing to install anything locally:
+
+- 🚀 **Web Application**: [https://sohanuls-doomsday-ready.vercel.app](https://sohanuls-doomsday-ready.vercel.app)
+- ⚡ **Live Movies API**: [https://sohanuls-doomsday-ready.vercel.app/api/movies](https://sohanuls-doomsday-ready.vercel.app/api/movies)
+- 🎟️ **Live Cinemas API**: [https://sohanuls-doomsday-ready.vercel.app/api/cinemas](https://sohanuls-doomsday-ready.vercel.app/api/cinemas)
+
+---
+
+### Option B: Running with Docker Compose (Recommended Bonus)
 
 Start the entire application with one command:
 
@@ -270,7 +292,7 @@ docker compose up --build
 
 ---
 
-### Option B: Running Locally (Node.js)
+### Option C: Running Locally (Node.js)
 
 #### 1. Backend
 ```bash
