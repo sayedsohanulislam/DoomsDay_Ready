@@ -329,7 +329,7 @@ d:\Blinto\
         │   ├── RewatchPlan.jsx     # Dual-view: Roadmap Timeline & DAG Graph
         │   └── Booking.jsx         # Party booking station & seat map
         └── components/
-            ├── Layout.jsx          # Responsive Marvel sidebar & brand
+            ├── Layout.jsx          # Header navigation, Doomsday Ready wordmark, and footer
             ├── DoomsdayCountdown.jsx # Live countdown ticker & readiness score
             ├── PrerequisiteGraph.jsx # Interactive SVG DAG network visualizer
             ├── SeatMap.jsx         # Cinema theater seating diagram
@@ -348,3 +348,12 @@ d:\Blinto\
 In compliance with the assessment guidelines:
 - **AI Tools Used**: GitHub Copilot and Google Antigravity were utilized during development for rapid scaffolding, CSS token configuration, boilerplate typing, and formatting markdown documentation.
 - **Independent Algorithm Implementation**: All core mathematical and graph algorithms—specifically **Iterative DFS Cycle Detection**, **Kahn's Topological Sort Algorithm**, and **Bottom-Up Minimum Coin-Change Dynamic Programming with Backtracking**—were designed and written manually without external algorithmic libraries.
+
+---
+
+## Submission & Repository Access
+
+- **Public Repository URL**: [https://github.com/sayedsohanulislam/DoomsDay_Ready](https://github.com/sayedsohanulislam/DoomsDay_Ready)
+- **Branch**: `main`
+- **Visibility Note**: If the repository visibility is kept private, please ensure collaborator access is granted to the Blinto hiring team reviewers (`@blinto` or communicated reviewer GitHub handles) so the review team can access the source code and run the assessment suite without interruption.
+
